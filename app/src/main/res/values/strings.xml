@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FormularioDeCadastroAlura</string>
+    <string name="title_form_register">Cadastro de Endereço</string>
+    <string name="hint_name">Digite seu nome</string>
+    <string name="hint_number">Digite seu telefone</string>
+    <string name="hint_cep">Digite o Cep</string>
+    <string name="register">Iniciar Cadastro</string>
+    <string name="sucess_address_register">PARABÉNS SEU ENDEREÇO FOI CADASTRADO COM SUCESSO!</string>
+    <string name="data">Confira seus dados abaixo:</string>
+</resources>
