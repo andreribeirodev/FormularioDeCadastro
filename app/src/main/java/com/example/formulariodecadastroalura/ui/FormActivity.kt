@@ -26,12 +26,12 @@ class FormActivity : AppCompatActivity() {
         binding.buttonFinishRegister.setOnClickListener{
 
             val address = Address(
-                cep = binding.editTextCep.toString(),
-                logradouro = binding.editTextLogradouro.toString(),
-                numero = binding.editTextNumber.toString(),
-                bairro = binding.editTextBairro.toString(),
-                complemento = binding.editTextComplemento.toString(),
-                cidade = binding.editTextCity.toString()
+                cep = binding.editTextCep.text.toString(),
+                logradouro = binding.editTextLogradouro.text.toString(),
+                numero = binding.editTextNumber.text.toString(),
+                bairro = binding.editTextBairro.text.toString(),
+                complemento = binding.editTextComplemento.text.toString(),
+                cidade = binding.editTextCity.text.toString()
             )
 
 
