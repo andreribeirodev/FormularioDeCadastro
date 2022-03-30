@@ -19,16 +19,16 @@ class SucessActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val user = intent.extras?.getParcelable<User>("user")!!
-        val address = intent.extras!!.getParcelable<Address>("address")!!
+        val address = intent.extras?.getParcelable<Address>("address")!!
 
         binding.textViewName.text = "Nome: ${user.name}"
         binding.textViewCell.text = "Telefone: ${user.cell}"
-        binding.textViewCep.text = "Cep: ${address.cep.toString()}"
-        binding.textViewLogradouro.text = "Logradouro: ${address.logradouro.toString()}"
-        binding.textViewNumber.text = "Número: ${address.numero.toString()}"
-        binding.textViewBairro.text = "Bairro: ${address.bairro.toString()}"
-        binding.textViewComplements.text = "Complemento: ${address.complemento.toString()}"
-        binding.textViewCity.text = "Cidade: ${address.cidade.toString()}"
+        binding.textViewCep.text = "Cep: ${address.cep}"
+        binding.textViewLogradouro.text = "Logradouro: ${address.logradouro}"
+        binding.textViewNumber.text = "Número: ${address.numero}"
+        binding.textViewBairro.text = "Bairro: ${address.bairro}"
+        binding.textViewComplements.text = "Complemento: ${address.complemento}"
+        binding.textViewCity.text = "Cidade: ${address.cidade}"
 
     }
 
